@@ -1,3 +1,9 @@
+# revision 17127
+# category Package
+# catalog-ctan /macros/latex/contrib/braket
+# catalog-date 2010-02-23 16:09:16 +0100
+# catalog-license pd
+# catalog-version undef
 Name:		texlive-braket
 Version:	20100223
 Release:	1
@@ -42,6 +48,7 @@ extended primitive \middle for more reliable results.
 %{_texmfdistdir}/tex/latex/braket/braket.sty
 %doc %{_texmfdistdir}/doc/latex/braket/braket.pdf
 %doc %{_texmfdistdir}/doc/latex/braket/braket.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -52,3 +59,5 @@ extended primitive \middle for more reliable results.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
