@@ -5,7 +5,7 @@
 # catalog-license pd
 # catalog-version undef
 Name:		texlive-braket
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Dirac bra-ket and set notations
 Group:		Publishing
