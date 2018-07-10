@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-braket
 Version:	20180303
-Release:	1
+Release:	2
 Summary:	Dirac bra-ket and set notations
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/braket
