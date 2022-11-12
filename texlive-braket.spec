@@ -1,18 +1,12 @@
-# revision 17127
-# category Package
-# catalog-ctan /macros/latex/contrib/braket
-# catalog-date 2010-02-23 16:09:16 +0100
-# catalog-license pd
-# catalog-version undef
 Name:		texlive-braket
-Version:	20190228
+Version:	17127
 Release:	1
 Summary:	Dirac bra-ket and set notations
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/braket
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/braket.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/braket.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/braket.r17127.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/braket.doc.r17127.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ If the package finds itself operating under e-tex, it uses the
 extended primitive \middle for more reliable results.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -42,25 +36,10 @@ extended primitive \middle for more reliable results.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100223-2
-+ Revision: 749886
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100223-1
-+ Revision: 717983
-- texlive-braket
-- texlive-braket
-- texlive-braket
-- texlive-braket
-- texlive-braket
-
