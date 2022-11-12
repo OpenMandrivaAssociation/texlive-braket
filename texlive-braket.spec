@@ -5,8 +5,8 @@ Summary:	Dirac bra-ket and set notations
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/braket
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/braket.r17127.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/braket.doc.r17127.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/braket.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/braket.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
