@@ -3,7 +3,7 @@ Version:	17127
 Release:	2
 Summary:	Dirac bra-ket and set notations
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/braket
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/braket
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/braket.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/braket.doc.r%{version}.tar.xz
